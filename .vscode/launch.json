@@ -11,7 +11,7 @@
             "url": "http://localhost:5500",
             "webRoot": "${workspaceFolder}",
             "runtimeExecutable": "stable",
-            "file": "${workspaceFolder}/08-shopping-list-project/00-starter-files/shopping-list/index.html"
+            "file": "${workspaceFolder}/08-shopping-list-project//02-remove-clear-items/shopping-list/index.html"
         },
         {
             "type": "chrome",
@@ -20,7 +20,7 @@
             "url": "http://localhost:5500",
             "webRoot": "${workspaceFolder}",
             "runtimeExecutable": "/Applications/Chrome.app/Contents/MacOS/Google Chrome",
-            "file": "${workspaceFolder}/08-shopping-list-project/00-starter-files/shopping-list/index.html"
+            "file": "${workspaceFolder}/08-shopping-list-project//02-remove-clear-items/shopping-list/index.html"
         }
     ]
 }
