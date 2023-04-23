@@ -100,3 +100,7 @@ itemList.addEventListener('click', removeItem);
 clearBtn.addEventListener('click', clearItems);
 itemFilter.addEventListener('input', filterItems);
 checkUI();
+localStorage.setItem('name', 'Randy');
+console.log(localStorage.getItem('name'));
+// localStorage.removeItem('name');
+localStorage.clear(); // This clears all localStorage
