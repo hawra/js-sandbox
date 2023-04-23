@@ -11,7 +11,7 @@
             "url": "http://localhost:5500",
             "webRoot": "${workspaceFolder}",
             "runtimeExecutable": "stable",
-            "file": "${workspaceFolder}/09-asynchronous-javascript/01-settimeout-cleartimeout/index.html"
+            "file": "${workspaceFolder}/09-asynchronous-javascript/03-callbacks/index.html"
         },
         {
             "type": "chrome",
@@ -20,7 +20,7 @@
             "url": "http://localhost:5500",
             "webRoot": "${workspaceFolder}",
             "runtimeExecutable": "/Applications/Chrome.app/Contents/MacOS/Google Chrome",
-            "file": "${workspaceFolder}/09-asynchronous-javascript/01-settimeout-cleartimeout/index.html"
+            "file": "${workspaceFolder}/09-asynchronous-javascript/03-callbacks/index.html"
         }
     ]
 }

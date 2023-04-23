@@ -5,7 +5,7 @@ setTimeout(function () {
 }, 2000);
 
 // Named function
-setTimeout(changeText, 3000);
+// setTimeout(changeText, 3000);
 
 function changeText() {
   document.querySelector('h1').textContent = 'Hello from callback';
@@ -19,3 +19,8 @@ document.querySelector('#cancel').addEventListener('click', () => {
   clearTimeout(timerId);
   console.log('Timer Cancelled');
 });
+
+// RSH The setTimeout callback is placed on the Task Queue
+// which has to wait until the Call Stack has run before it is executed
+// so even if you set the setTimeout time to 0 it still gets beat by the Call Stack
+// which has to clear before the head of the Task Queue gets to be serviced
