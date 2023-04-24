@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "RetireDoc Launch Chrome against localhost",
-            "url": "http://localhost:5500",
+            "url": "http://localhost:5500/09-asynchronous-javascript/04-ajax-xhr/",
             "webRoot": "${workspaceFolder}",
             "runtimeExecutable": "stable",
             "file": "${workspaceFolder}/09-asynchronous-javascript/04-ajax-xhr/index.html"
@@ -17,10 +17,10 @@
             "type": "chrome",
             "request": "launch",
             "name": "Neuro Launch Chrome against localhost",
-            "url": "http://localhost:5500",
+            "url": "http://localhost:5500/09-asynchronous-javascript/04-ajax-xhr/",
             "webRoot": "${workspaceFolder}",
-            "runtimeExecutable": "/Applications/Chrome.app/Contents/MacOS/Google Chrome",
-            "file": "${workspaceFolder}/09-asynchronous-javascript/04-ajax-xhr/index.html"
+            "runtimeExecutable": "/Applications/Chrome.app/Contents/MacOS/Google Chrome"
+            //  "file": "${workspaceFolder}/09-asynchronous-javascript/04-ajax-xhr/index.html"
         }
     ]
 }
