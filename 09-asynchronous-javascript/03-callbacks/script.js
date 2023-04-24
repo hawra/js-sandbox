@@ -3,6 +3,8 @@
 // }
 
 // document.querySelector('button').addEventListener('click', toggle);
+// RSH Make sure that when you pass in a callback like 'toggle' you don't use ()
+// ... you dont write ... .addEventListener('click', toggle());
 
 const posts = [
   { title: 'Post One', body: 'This is post one' },

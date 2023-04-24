@@ -1,8 +1,8 @@
-const xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest(); // RSH XHR  stands for XmlHttpRequest
 
 // Sepcify method and endpoint/URL
-// xhr.open('GET', './movies.json');
-xhr.open('GET', 'https://api.github.com/users/bradtraversy/repos');
+xhr.open('GET', './movies.json');
+// xhr.open('GET', 'https://api.github.com/users/bradtraversy/repos');
 
 // readyState has 5 possible values
 // - 0: request not initialized
@@ -11,17 +11,18 @@ xhr.open('GET', 'https://api.github.com/users/bradtraversy/repos');
 // - 3: processing request
 // - 4: request finished and response is ready
 xhr.onreadystatechange = function () {
-  if (this.readyState === 4 && this.status === 200) {
-    // console.log(JSON.parse(this.responseText));
-    const data = JSON.parse(this.responseText);
-
-    data.forEach((repo) => {
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${repo.name}</strong> - ${repo.description}`;
-      document.querySelector('#results').appendChild(li);
-    });
-  }
+  console.log(this.readyState);
+  //console.log(JSON.parse(this.responseText));
 };
+//     const data = JSON.parse(this.responseText);
 
+//     data.forEach((repo) => {
+//       const li = document.createElement('li');
+//       li.innerHTML = `<strong>${repo.name}</strong> - ${repo.description}`;
+//       document.querySelector('#results').appendChild(li);
+//     });
+//   }
+// };
 // Send request
 xhr.send();
+// //
