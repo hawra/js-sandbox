@@ -10,8 +10,8 @@
             "name": "RetireDoc Launch Chrome against localhost",
             "url": "http://localhost:5500/09-asynchronous-javascript/04-ajax-xhr/",
             "webRoot": "${workspaceFolder}",
-            "runtimeExecutable": "stable",
-            "file": "${workspaceFolder}/09-asynchronous-javascript/04-ajax-xhr/index.html"
+            "runtimeExecutable": "stable"
+            //    "file": "${workspaceFolder}/09-asynchronous-javascript/04-ajax-xhr/index.html"
         },
         {
             "type": "chrome",
