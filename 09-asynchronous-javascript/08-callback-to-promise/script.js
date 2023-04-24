@@ -7,7 +7,6 @@ function createPost(post) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       let error = false;
-
       if (!error) {
         posts.push(post);
         resolve();
@@ -34,6 +33,6 @@ function showError(error) {
   document.getElementById('posts').appendChild(h3);
 }
 
-createPost({ title: 'Post Three', body: 'This is post' })
+createPost({ title: 'Post Three', body: 'This is post 3' })
   .then(getPosts)
-  .catch(showError);
+  .catch(showError); // RSH whatever got passed by the 'reject' function in line 34 goes into the slot at showError
