@@ -19,8 +19,8 @@ function getData(endpoint) {
   });
 }
 
-// getData('./movies.json')
-//   .then((movies) => {
+// getData('./movies.json')   // RSH This approach uses .then syntax.
+//   .then((movies) => {      //  The async await alternative is below
 //     console.log(movies);
 //     return getData('./actors.json');
 //   })
@@ -34,6 +34,7 @@ function getData(endpoint) {
 //   .catch((error) => console.log(error));
 
 async function getAllData() {
+  // RSH using this approach the delays are additive, taking about 10 sec.
   const movies = await getData('./movies.json');
   const actors = await getData('./actors.json');
   const directors = await getData('./directors.json');
@@ -42,15 +43,18 @@ async function getAllData() {
 
 async function getAllDataWithFetch() {
   const moviesRes = await fetch('./movies.json');
+  console.log(moviesRes, 'RSH 1'); // RSH moviesRes is a json object (see RSH* below)
   const movies = await moviesRes.json();
-
+  console.log(movies, 'RSH 2'); // RSH movies is an array with 4 movie objects  = {release_year: "1983", title: "scarface"}, etc.
   const actorsRes = await fetch('./actors.json');
+  console.log(actorsRes, 'RSH 3');
   const actors = await actorsRes.json();
-
+  console.log(actors, 'RSH 4');
   const directorsRes = await fetch('./directors.json');
+  console.log(directorsRes, 'RSH 5');
   const directors = await directorsRes.json();
-
-  console.log(movies, actors, directors);
+  console.log(directors, 'RSH 6');
+  console.log(movies, actors, directors, 'RSH 6');
 }
 
 async function getAllDataPromiseAll() {
@@ -81,3 +85,5 @@ async function getAllDataPromiseAll2() {
 // getAllDataWithFetch();
 // getAllDataPromiseAll();
 getAllDataPromiseAll2();
+
+// RSH* = Response {type: 'basic', url: 'http://127.0.0.1:5500/10-fetch-and-async-await/09-multiple-promises-async-await/movies.json', redirected: false, status: 200, ok: true, …}
