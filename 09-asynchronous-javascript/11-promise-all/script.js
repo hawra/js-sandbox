@@ -21,7 +21,9 @@ function getData(endpoint) {
 }
 
 const moviesPromise = getData('./movies.json');
+console.log('RSH', Date.now() / 1000);
 const actorsPromise = getData('./actors.json');
+console.log('RSH', Date.now() / 1000); // RSH Curiously these two logs are identical
 const directorsPromise = getData('./directors.json');
 
 const dummyPromise = new Promise((resolve, reject) => {

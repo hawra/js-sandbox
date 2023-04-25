@@ -24,13 +24,13 @@ function getData(endpoint) {
 getData('./movies.json')
   .then((movies) => {
     console.log(movies);
-    return getData('./actors.json');
+    return getData('./actors.json'); // RSH Here we 'return' a list of actors down into the next .then
   })
   .then((actors) => {
     console.log(actors);
-    return getData('./directors.json');
+    return getData('./directors.json'); // RSH Here we 'return' a list of directors down into the next .then
   })
   .then((directors) => {
     console.log(directors);
   })
-  .catch((error) => console.log(error));
+  .catch((error) => console.log(error)); // RSH so if we misspelled directors for example...
