@@ -13,7 +13,7 @@ function double(number) {
 }
 
 try {
-  const y = double('hello');
+  const y = double('RSH');
   console.log(y);
 } catch (error) {
   console.log(error);
