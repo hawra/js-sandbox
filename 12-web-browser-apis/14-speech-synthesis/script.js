@@ -24,6 +24,7 @@ function onSubmit(e) {
   e.preventDefault();
 
   const textInput = document.getElementById('text-input');
+  console.log(textInput.value);
 
   const utterThis = new SpeechSynthesisUtterance(textInput.value);
 

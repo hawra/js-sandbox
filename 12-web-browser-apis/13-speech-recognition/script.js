@@ -22,7 +22,7 @@ rec.onresult = function (e) {
 
   for (let i = e.resultIndex; i < e.results.length; i++) {
     const script = e.results[i][0].transcript.toLowerCase().trim();
-
+    console.log(script); // RSH
     if (acceptedColors.includes(script)) {
       document.body.style.backgroundColor = script;
     } else {
