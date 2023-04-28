@@ -43,7 +43,7 @@ function updateProgress() {
 }
 
 function setProgress() {
-  video.currentTime = (+progress.value * video.duration) / 100;
+  video.currentTime = (+progress.value * video.duration) / 100; // RSH the +progress.value syntax converts progress.value to a number
 }
 
 video.addEventListener('click', playPause);
