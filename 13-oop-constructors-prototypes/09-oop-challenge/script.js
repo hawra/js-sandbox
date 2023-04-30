@@ -33,3 +33,5 @@ player2.gainXp(2);
 
 // console.log(player1.describe());
 // console.log(player2.describe());
+console.log(Player, typeof Player, 'RSH 1');
+console.log(Player.prototype, typeof Player, 'RSH 2');

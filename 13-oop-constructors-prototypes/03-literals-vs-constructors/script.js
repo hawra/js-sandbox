@@ -1,12 +1,13 @@
 const strLit = 'Hello';
-const strObj = new String('Hello');
+const strObj = new String('Hello'); // RSH THis is a Constructor Function
 
 console.log(strLit, typeof strLit);
 console.log(strObj, typeof strObj);
 
-// Boxing
+// Boxing   RSH Boxing is when javascript adds a wrapping object onto a literal
 console.log(strLit.toUpperCase());
-// Even though the strLit variable is a string literal for a primitive type, it can still use the toUpperCase() method because the string literal is converted to a String object behind the scenes. This is called boxing.
+// Even though the strLit variable is a string literal for a primitive type, it can still use the toUpperCase() method
+// because the string literal is converted to a String object behind the scenes. This is called boxing.
 console.log(strLit[0]);
 
 // Unboxing

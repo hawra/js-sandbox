@@ -1,13 +1,14 @@
 function Shape(name) {
-  this.name = name;
-}
+  // RSH Here we're trying to do inheritance with prototypes instead of classes
+  this.name = name; // ... And the syntax is a bit ubly, but has a few perks
+} // ... Note that in a regular function 'this' pertains to the window property
 
 Shape.prototype.logName = function () {
   console.log(`Shape Name: ${this.name}`);
 };
 
 function Rectangle(name, height, width) {
-  Shape.call(this, name);
+  Shape.call(this, name); // RSH If we use the 'call' function, it allows us to pass in 'this'
 
   this.height = height;
   this.width = width;

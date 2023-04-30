@@ -12,7 +12,9 @@ const rectanglePrototypes = {
 
 function createRectangle(height, width) {
   return Object.create(rectanglePrototypes, {
+    // RSH This is just an alternate way of creating multiple objects
     height: {
+      // RSH ... by taking in an object of methods (your prototype functions), and an object of properties
       value: height,
     },
     width: {

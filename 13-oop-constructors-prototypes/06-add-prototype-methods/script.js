@@ -5,6 +5,7 @@ function Rectangle(name, width, height) {
 }
 
 Rectangle.prototype.area = function () {
+  // RSH This adds the 'area' method to Rectangle Constructor function's prototype
   return this.width * this.height;
 };
 
@@ -23,11 +24,11 @@ Rectangle.prototype.changeName = function (newName) {
 const rect = new Rectangle('Rect', 10, 20);
 const rect2 = new Rectangle('Rect 2', 30, 40);
 
-console.log(rect);
-console.log(rect.area());
-console.log(rect.perimeter());
-console.log(rect.isSquare());
+console.log(rect, 'RSH 1');
+console.log(rect.area(), 'RSH 2');
+console.log(rect.perimeter(), 'RSH 3');
+console.log(rect.isSquare(), 'RSH 4');
 rect.changeName('Test');
-console.log(rect.name);
+console.log(rect.name, 'RSH 5');
 
-console.log(rect2.area());
+console.log(rect2.area(), 'RSH 6');

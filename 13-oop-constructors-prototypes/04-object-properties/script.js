@@ -25,17 +25,17 @@ delete rect2.perimeter;
 console.log(rect2.hasOwnProperty('color'));
 console.log(rect1.hasOwnProperty('color'));
 
-// Get keys
-console.log(Object.keys(rect1));
+// Get keys   // RSH Keys and Values include properties and methods
+console.log(Object.keys(rect1), 'RSH 1');
 
 // Get values
-console.log(Object.values(rect2));
+console.log(Object.values(rect2), 'RSH 2');
 
-// Get entries
-console.log(Object.entries(rect1));
+// Get entries     Entries include
+console.log(Object.entries(rect1), 'RSH 3');
 
 for (let [key, value] of Object.entries(rect1)) {
   if (typeof value !== 'function') {
-    console.log(`${key} - ${value}`);
+    console.log(`${key} - ${value}`, 'RSH 4');
   }
 }

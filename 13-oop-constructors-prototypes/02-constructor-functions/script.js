@@ -1,5 +1,6 @@
-// Constructor Function
+// Constructor Function     RSH: By convention yoweu use Upper case... 'Rectangle(...)
 function Rectangle(name, width, height) {
+  // return this;       // RSH This statement is implicit as Constructor Functions returns 'this'
   this.name = name;
   this.width = width;
   this.height = height;
@@ -7,7 +8,7 @@ function Rectangle(name, width, height) {
     return this.height * this.width;
   };
 }
-
+// RSH The 'new' keyword is to involk Constructor Functions, like 'Rectangle' above
 // We can create as many instances of our Rectangle objects as we want using the `new` keyword
 const rect1 = new Rectangle('Rectangle 1', 10, 10);
 console.log(rect1.name);
