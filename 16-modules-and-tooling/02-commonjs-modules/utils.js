@@ -7,7 +7,7 @@ function capitalizeWords(str) {
 }
 
 function makeMoney(amount) {
-  return `$${amount}`;
+  return `$${amount}`; // RSH We must use 2 $'s to ad a single one to the amount number of dollars
 }
 
 module.exports = {
